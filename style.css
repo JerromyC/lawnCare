@@ -1,0 +1,139 @@
+@import url(./styles/nav.css);
+@import url(./styles/hero.css);
+@import url(./styles/services.css);
+@import url(./styles/why.css);
+@import url(./styles/grid.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary: #F7FACF;
+    --secondary: #017143;
+    --tertiary: #5FB240;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* global--------------------------------------------------------------- */
+
+h1 {
+    font-size: clamp(30pt, 6vw, 50pt);
+    line-height: clamp(31pt, 6.2vw, 50pt);
+    width: 100%;
+    color: #fff;
+}
+
+h2 {
+    font-size: clamp(20pt, 4vw, 30pt);
+    line-height: clamp(20pt, 4vw, 30pt);
+
+}
+
+h3 {
+    font-size: clamp(14pt, 2.5vw, 16pt);
+}
+
+p, li {
+    font-size: clamp(12pt, 2vw, 14pt);
+}
+
+ul {
+    list-style: none;
+}
+
+/* footer ---------------------------------------------------------------- */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 64px 10vw;
+    z-index: 10;
+    color: #fff;
+    background-color: var(--secondary);
+
+}
+
+footer .line {
+    background-color: #fff;
+    width: 80%;
+    margin: 8px auto 16px;
+}
+
+footer div {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+footer div ul li {
+    margin-bottom: 8px;
+}
+
+footer div ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+footer .social-wrapper a {
+    width: 30%;
+    max-width: 80px;
+}
+
+footer .social-wrapper a img {
+    width: 100%;
+    margin: auto;
+}
+
+footer button {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    margin-top: 32px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 50px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+footer div p {
+    font-size: clamp( 14pt, 7vw 18pt);
+    width: 100%;
+    font-style: italic;
+    font-weight: light;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+
+.footer-logo {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 50%;
+}

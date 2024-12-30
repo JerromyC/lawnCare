@@ -1,0 +1,102 @@
+/* why choose us -------------------------------------------------------------------------------------------------------------------- */
+
+#why {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--primary);
+    text-align: center;
+    padding-top: 80px;
+}
+
+#why h2 {
+    width: 60%;
+    margin: auto;
+}
+
+#why h3 {
+    color: var(--secondary)
+}
+
+.why-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 64px auto;
+    margin-top: 32px;
+}
+
+.line {
+    background-color: #000;
+    height: 1px;
+    width: 60%;
+    max-width: 600px;
+    border-radius: 1px;
+    margin: 32px auto;
+}
+
+.why-item {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    text-align: center;
+    width: 200px;
+    margin: 32px;
+}
+
+.why-item > img {
+    width: 50%;
+    height: auto;
+}
+
+.review-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.review-wrapper h2 {
+    width: 100%!important;
+}
+
+.review-wrapper p {
+text-align: left;
+font-style: italic;
+margin: 16px;
+max-width: 600px;
+}
+
+.review-wrapper span {
+    color: var(--secondary);
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+}
+
+#why > img {
+    width: 300%;
+    margin-left: -200%;
+}
+
+@media screen and (min-width: 700px) {
+    #why > img {
+        width: 75%;
+        margin-left: auto;
+        margin-right: 0px;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #why > img {
+        width: 100%;
+    }
+}
