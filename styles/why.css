@@ -6,7 +6,7 @@
     position: relative;
     background-color: var(--primary);
     text-align: center;
-    padding-top: 80px;
+    padding: 80px 32px 32px 32px;
 }
 
 #why h2 {
@@ -85,6 +85,31 @@ max-width: 600px;
     margin-left: -200%;
 }
 
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 64px;
+    width: 100%;
+}
+
+.about-wrapper_inner {
+    width: 100%;
+}
+
+.about-wrapper_inner > img {
+    width: 100px;
+    height: auto;
+}
+
+.about-wrapper_inner p {
+    max-width: 100%;
+    text-align: left;
+    margin: 16px auto;
+}
+
 @media screen and (min-width: 700px) {
     #why > img {
         width: 75%;
@@ -92,11 +117,29 @@ max-width: 600px;
         margin-right: 0px;
         align-self: flex-end;
     }
+
+    .about-wrapper_inner {
+        width: 50%;
+    }
+
+    .about-wrapper_inner p {
+        max-width: 400px;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
 
     #why > img {
         width: 100%;
+    }
+
+    .about-wrapper_inner {
+        width: auto;
+        max-width: 50%;
+    }
+
+    .about-wrapper_inner p {
+        max-width: 400px;
     }
 }

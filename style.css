@@ -3,6 +3,21 @@
 @import url(./styles/services.css);
 @import url(./styles/why.css);
 @import url(./styles/grid.css);
+@import url(./styles/contact.css);
+
+@font-face {
+    font-family: 'AlbertSans';
+    src: url('./assets/fonts/AlbertSans_wght_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Castoro';
+    src: url('./assets/fonts/Castoro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
@@ -18,14 +33,15 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    font-family: 'AlbertSans', sans-serif;
 }
 
 
 /* global--------------------------------------------------------------- */
 
 h1 {
+    font-family: 'Castoro', sans-serif;
     font-size: clamp(30pt, 6vw, 50pt);
     line-height: clamp(31pt, 6.2vw, 50pt);
     width: 100%;
@@ -33,12 +49,14 @@ h1 {
 }
 
 h2 {
+    font-family: 'Castoro', sans-serif;
     font-size: clamp(20pt, 4vw, 30pt);
     line-height: clamp(20pt, 4vw, 30pt);
 
 }
 
 h3 {
+    font-family: 'Castoro', sans-serif;
     font-size: clamp(14pt, 2.5vw, 16pt);
 }
 
