@@ -22,6 +22,7 @@
 .contact-wrapper > div > img {
     height: auto;
     max-height: 200px;
+    max-width: 100%;
 }
 
 .contact-wrapper> div:last-of-type {
