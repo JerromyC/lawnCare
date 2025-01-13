@@ -10,7 +10,7 @@
 }
 
 #why h2 {
-    margin: 0px auto 32px;
+    margin: 0px auto 64px;
 }
 
 .review-heading {
@@ -28,8 +28,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    margin: 64px auto;
-    margin-top: 32px;
+    margin: auto;
     padding: 0px 32px;
 }
 
@@ -55,6 +54,36 @@ align-items: center;
 .why-item > img {
     width: 50%;
     height: auto;
+}
+
+.about-container {
+    margin: 128px auto;
+    padding: 0px 32px;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 64px;
+    width: 100%;
+}
+
+.about-wrapper_inner {
+    width: 100%;
+}
+
+.about-wrapper_inner > img {
+    width: 100px;
+    height: auto;
+}
+
+.about-wrapper_inner p {
+    max-width: 100%;
+    text-align: left;
+    margin: 16px auto;
 }
 
 .review-wrapper {
@@ -83,35 +112,6 @@ max-width: 600px;
 #why > img {
     width: 300%;
     margin-left: -200%;
-}
-
-.about-container {
-    margin: 64px auto;
-}
-
-.about-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    gap: 64px;
-    width: 100%;
-}
-
-.about-wrapper_inner {
-    width: 100%;
-}
-
-.about-wrapper_inner > img {
-    width: 100px;
-    height: auto;
-}
-
-.about-wrapper_inner p {
-    max-width: 100%;
-    text-align: left;
-    margin: 16px auto;
 }
 
 @media screen and (min-width: 700px) {
