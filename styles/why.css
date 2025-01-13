@@ -10,7 +10,7 @@
 }
 
 #why h2 {
-    margin: 0px auto 64px;
+    margin: 0px auto 16px;
 }
 
 .review-heading {
@@ -57,7 +57,7 @@ align-items: center;
 }
 
 .about-container {
-    margin: 128px auto;
+    margin: 64px auto;
     padding: 0px 32px;
 }
 
@@ -115,6 +115,10 @@ max-width: 600px;
 }
 
 @media screen and (min-width: 700px) {
+    #why h2 {
+        margin: 0px auto 64px;
+    }
+
     #why > img {
         width: 75%;
         margin-left: auto;
@@ -136,6 +140,11 @@ max-width: 600px;
 
     #why > img {
         width: 100%;
+    }
+
+    .about-container {
+        margin: 128px auto;
+        padding: 0px 32px;
     }
 
     .about-wrapper_inner {
