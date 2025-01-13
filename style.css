@@ -52,7 +52,6 @@ h2 {
     font-family: 'Castoro', sans-serif;
     font-size: clamp(20pt, 4vw, 30pt);
     line-height: clamp(20pt, 4vw, 30pt);
-
 }
 
 h3 {
@@ -66,6 +65,12 @@ p, li {
 
 ul {
     list-style: none;
+}
+
+.topper {
+    display: block;
+    font-size: clamp(12pt, 2vw, 14pt);
+    margin-bottom: 8px;
 }
 
 /* footer ---------------------------------------------------------------- */
@@ -92,7 +97,7 @@ footer .line {
 
 footer div {
     width: 100%;
-    max-width: 400px;
+    max-width: 60%;
     text-align: center;
     margin-bottom: 64px;
 }
@@ -154,4 +159,26 @@ footer div p {
     max-width: 300px;
     margin: auto;
     border-radius: 50%;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 32px;
+    text-align: center;
+}
+
+.copyright p {
+    margin-bottom: 16px;
+}
+
+.plug {
+    opacity: 75%;
+}
+
+.plug a {
+    color: var(--tertiary);
 }

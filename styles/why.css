@@ -10,8 +10,11 @@
 }
 
 #why h2 {
-    width: 60%;
-    margin: auto;
+    margin: 0px auto 32px;
+}
+
+.review-heading {
+    margin: 64px auto 0px!important;
 }
 
 #why h3 {
@@ -63,10 +66,6 @@ align-items: center;
     margin: auto;
 }
 
-.review-wrapper h2 {
-    width: 100%!important;
-}
-
 .review-wrapper p {
 text-align: left;
 font-style: italic;
@@ -84,6 +83,10 @@ max-width: 600px;
 #why > img {
     width: 300%;
     margin-left: -200%;
+}
+
+.about-container {
+    margin: 64px auto;
 }
 
 .about-wrapper {
