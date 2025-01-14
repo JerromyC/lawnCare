@@ -73,6 +73,35 @@ ul {
     margin-bottom: 8px;
 }
 
+.toTop {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: clamp(50px, 10vw, 100px);
+    height: clamp(50px, 10vw, 100px);
+    background-color: var(--secondary);
+    border: 5px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    opacity: 50%;
+    z-index: 100;
+}
+
+.toTop:hover {
+    opacity: 1;
+}
+
+.toTop img {
+    height: 50%;
+    margin: auto;
+}
+
 /* footer ---------------------------------------------------------------- */
 
 footer {

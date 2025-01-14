@@ -44,6 +44,11 @@ nav img {
     margin-bottom: 20px;
 }
 
+#navbar li a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
 nav ul li:last-of-type {
     margin-right: 5px;
 }
