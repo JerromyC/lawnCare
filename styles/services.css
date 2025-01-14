@@ -50,7 +50,7 @@
     padding-bottom: 0px;
 }
 
-.service-plans > p:last-of-type {
+.service-plans > .centered{
     text-align: center;
     max-width: 750px;
 }

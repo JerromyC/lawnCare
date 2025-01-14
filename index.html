@@ -18,14 +18,19 @@
 <body>
     <nav>
         <img src="./assets/setxLawnCare.jpg" alt="SETX lawncare solutions logo">
-        <ul>
+        <svg id="hamburger" viewBox="0 0 250 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="top" width="250" height="30" rx="15" y="0" fill="#017143" />
+            <rect class="middle" width="250" height="30" rx="15" y="84" fill="#017143" />
+            <rect class="bottom" width="250" height="30" rx="15" y="165" fill="#017143" />
+        </svg>
+        <ul id="navbar">
             <li>Home</li>
             <li>Services</li>
             <li>Contact</li>
+            <button>Free Estimate</button>
         </ul>
-        <button>Free Estimate</button>
         <div>
-            <p> 🌟 Get 10% off your first month of lawn care! 🌟 </p>
+            <p> 🌟 Get 10% off your first service! 🌟</p>
         </div>
     </nav>
     <section id="hero">
@@ -41,7 +46,7 @@
         <div class="grid">
             <div class="grid-cell large-cell service-grid_wrapper_text">
                 <h2>Taking the Headache and Hassle Out of Lawn Care and Property Maintanence</h2>
-                <p>At South East Texas Lawn Care Solutions, our mission is to enhance the beauty and value of every
+                <p>At Southeast Texas Lawn Care Solutions, our mission is to enhance the beauty and value of every
                     client’s property while exceeding their expectations every step of the way.</p>
             </div>
             <div class="grid-cell large-cell">
@@ -112,9 +117,10 @@
         </div>
         <div class="service-plans">
             <h2>Service Plans</h2>
-            <p><em>Looking for regular Lawn Care services?</em></p>
+            <p class="centered"><em>Are you looking for reoccurring lawn care? </em></p>
             <br>
-            <p>Take a look at our Lawn Maintenance Packages to see if there might be a better fit than our standard
+            <p class="centered">Take a look at our Lawn Maintenance Packages to see if there might be a better fit than
+                our standard
                 service offerings!</p>
             <div class="service-plans_item-wrapper">
                 <div class="service-plans_item">
@@ -138,8 +144,8 @@
                             <p>Ongoing soil testing and tailored fertilization.</p>
                         </li>
                         <li class="non-offer">
-                            <h4>Irrigation System Monitoring</h4>
-                            <p>Regular checks to ensure optimal watering efficiency.</p>
+                            <h4>Seasonal Cleanup</h4>
+                            <p>Leaf/debris removal, mulching, and preparation for all seasons.</p>
                         </li>
                     </ul>
                 </div>
@@ -148,7 +154,7 @@
                     <span><em>Extended Care</em></span>
                     <ul>
                         <li>
-                            <h4>Weekly Mowing</h4>
+                            <h4>Bi-weekly Mowing</h4>
                             <p>Consistent mowing during peak growing seasons.</p>
                         </li>
                         <li>
@@ -164,8 +170,8 @@
                             <p>Ongoing soil testing and tailored fertilization.</p>
                         </li>
                         <li class="non-offer">
-                            <h4>Irrigation System Monitoring</h4>
-                            <p>Regular checks to ensure optimal watering efficiency.</p>
+                            <h4>Seasonal Cleanup</h4>
+                            <p>Leaf/debris removal, mulching, and preparation for all seasons.</p>
                         </li>
                     </ul>
                 </div>
@@ -174,7 +180,7 @@
                     <span><em>Pristine Lawn</em></span>
                     <ul>
                         <li>
-                            <h4>Weekly Mowing</h4>
+                            <h4>Bi-weekly Mowing</h4>
                             <p>Regular mowing and upkeep throughout the year.</p>
                         </li>
                         <li>
@@ -190,14 +196,14 @@
                             <p>Ongoing soil testing and tailored fertilization.</p>
                         </li>
                         <li>
-                            <h4>Irrigation System Monitoring</h4>
-                            <p>Regular checks to ensure optimal watering efficiency.</p>
+                            <h4>Seasonal Cleanup</h4>
+                            <p>Leaf/debris removal, mulching, and preparation for all seasons.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <p>***Each package is available at a 20% discount off standard service rates, providing clients with
-                comprehensive lawn care solutions tailored to their needs and budget.***</p>
+            <p class="centered">***Request One of our Lawn Care Maintenance Package’s today and enjoy an exclusive 20%
+                discount on our expert services—perfect care at an unbeatable value!***</p>
         </div>
     </section>
     <section id="why">
@@ -225,7 +231,7 @@
             </div>
         </div>
 
-            <div class="about-container">
+        <div class="about-container">
             <h2>No job is too big or too small!</h2>
             <div class="about-wrapper">
                 <div class="about-wrapper_inner">
@@ -251,11 +257,11 @@
         <div class="review-wrapper">
             <p>| "I recently used Southeast Texas Lawn Care Solutions and they did a fantastic job on my lawn. The team
                 was professional, paid attention to detail, and left my yard looking great. Plus, their services were
-                very affordable. I highly recommend them!" <br><span> - Alexis Shyanne Parrish</span> |</p>
+                very affordable. I highly recommend them!" <br><span> - Alexis Parrish</span> |</p>
             <p>| "I recently hired Southeast Texas Lawn Care for my lawn maintenance, and I couldn’t be happier with
                 their service. From the initial consultation to the final touch-ups, their attention to detail was
                 impeccable. They meticulously trimmed the edges, ensured every blade of grass was even, and left my yard
-                looking immaculate. 10/10 recommend!!!" <br> <span> - Alisen Nikole</span> |</p>
+                looking immaculate. 10/10 recommend!!!" <br> <span> - Alisen Lawrence</span> |</p>
         </div>
         <div class="line"></div>
         <!-- why img -->
@@ -327,20 +333,26 @@
                             <label><input type="checkbox" name="services[]" value="irrigation"> Irrigation</label>
                         </div>
                     </div>
+                    <div class="form-section">
+                        <label for="additional-comments">Additional Comments and Requests</label>
+                        <textarea id="additional-comments" name="additional-comments" rows="10"
+                            placeholder="Let us know any specific details or requests..."></textarea>
+                    </div>
+
 
                     <!-- Subscription Dropdown -->
                     <label for="subscription">Choose a Subscription Plan:</label>
                     <div class="subscription-container">
-                    <select id="subscription" name="subscription" required>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="pay-as-you-go">Pay as you go</option>
-                        <option value="6-month">6-month</option>
-                        <option value="9-month">9-month</option>
-                        <option value="12-month">12-month</option>
-                    </select>
+                        <select id="subscription" name="subscription" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="pay-as-you-go">Pay as you go</option>
+                            <option value="6-month">6-month</option>
+                            <option value="9-month">9-month</option>
+                            <option value="12-month">12-month</option>
+                        </select>
 
-                    <button type="submit">Submit</button>
-                </div>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
             <div>
@@ -354,8 +366,9 @@
             <h3>Contact</h3>
             <div class="line"></div>
             <ul>
-                <li><a href="">1-555-555-5555</a></li>
-                <li><a href="">email@privider.com</a></li>
+                <li><a href="tel:14096593226">1-409-659-3226</a></li>
+                <li class="centered"><a
+                        href="mailto:setxlawncaresolutions@gmail.com">setxlawncaresolutions@gmail.com</a></li>
             </ul>
             <div class="social-wrapper">
                 <a href=""><img src="./assets/fb.gif" alt=""></a>
@@ -370,7 +383,8 @@
     </footer>
     <div class="copyright">
         <p>© 2025 Southeast Texas Lawn Care Solutions</p>
-        <p class="plug">site designed, developed, and mainatained by <a href="https://chancewebstudio.netlify.app/">Chance Web Studio</a></p>
+        <p class="plug">site designed, developed, and mainatained by <a
+                href="https://chancewebstudio.netlify.app/">Chance Web Studio</a></p>
         <a href="https://lordicon.com/">Animated icons by Lordicon.com</a>
     </div>
     <script src="./script.js"></script>

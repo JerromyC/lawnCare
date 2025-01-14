@@ -82,7 +82,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     height: auto;
-    padding: 64px 10vw;
+    padding: 64px 0px;
     z-index: 10;
     color: #fff;
     background-color: var(--secondary);
@@ -114,12 +114,13 @@ footer div ul li a {
 footer .social-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 60%;
     height: auto;
     margin: auto;
     margin-top: 32px;
     margin-bottom: 0px;
+    gap: 32px;
 }
 
 footer .social-wrapper a {

@@ -135,6 +135,11 @@ input, select, button {
     border-radius: 5px;
 }
 
+textarea {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
 .subscription-container {
     display: flex;
     flex-direction: column; /* Default stacking for smaller screens */
