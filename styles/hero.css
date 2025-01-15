@@ -20,16 +20,13 @@
 max-width: 500px;
 }
 
-#hero button {
-    width: 100%;
-    max-width: 350px;
-    height: 40px;
+#hero a {
     margin-top: 32px;
     background-color: var(--primary);
     color: var(--secondary);
-    border-radius: 50px;
-    font-size: 14pt;
-    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    padding: 8px;
 }
 
 #hero p {

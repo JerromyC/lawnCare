@@ -53,16 +53,19 @@ nav ul li:last-of-type {
     margin-right: 5px;
 }
 
-nav button {
+nav .button {
     height: 40px;
     margin: auto;
     width: clamp(150px, 50%, 250px);
     border-radius: 50px;
     font-size: 14pt;
+    padding: 8px;
+    align-content: center;
     color: #fff;
     background-color: var(--tertiary);
     border: none;
     z-index: 5;
+    font-weight: normal;
 }
 
 nav div {
